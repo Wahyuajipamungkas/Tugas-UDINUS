@@ -1,44 +1,34 @@
-//Nama : Wahyu Aji Pamungkas
-//NIM : A11.2022.14595
-//Klp : A11.4116
-
-
-
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-    int permen;
-    int uang = 5000;
-    cout << "Jika harga permen: " << endl;
-    cin >> permen;
-    if(permen == 1000) {
-        cout << endl;
-        cout << "Ardian Membeli permen sebanyak: " << 3 << endl;
-        cout << "perhitungan: " ;
-        for(int x = 1000; x <= 3000; x++) {
-            if(x % 1000 == 0)
-            cout << x << " ";
-        }
-    }else if(permen == 500) {
-       cout << endl;
-       cout << "Banyak permen yang dibeli Ardian : " << uang / permen << endl;
-       cout << "Perhitungan: " ;
-       for(int y=500; y <= 5000; y++) {
-            if(y % 500 == 0)
-            cout << y << " ";
-       }
-    } else if(permen == 300) {
-        cout << endl;
-        cout << "Banyak Peremen Ardian: " << 16 << endl;
-        cout << "Perhitungan: ";
-        for(permen > 0; permen <= uang; permen++) {
-            if(permen % 300 == 0){
-                cout << permen << " ";
-            }
-        }
+    while(true) {
+    cout << "==== Daftar Menu Makanan ====" << endl;
+    cout << "1. Nasi Kerikirl" << endl;
+    cout << "2. Rica Rica Bekicot" << endl;
+    cout << "3. Pepes Brotowali" << endl;
+    cout << "4. Kepiting Presto" << endl;
+    int menu;
+    cout << "Masukkan Kode Makanan: " << endl;
+    cin >> menu;
+    switch(menu) {
+    case 1:
+       cout << "Nasi Kerikirl" << endl;
+       break;
+    case 2:
+        cout << "Rica Rica Brotowali" << endl;
+        break;
+    case 3:
+        cout << "Pepes Brotowali" << endl;
+        break;
+    case 4:
+        cout << "Kepiting Presto" << endl;
+        break;
+    default:
+        cout << "Maaf,Kode yang anda masukkan tidak diketahui" << endl;
+    }
     }
     return 0;
 }
